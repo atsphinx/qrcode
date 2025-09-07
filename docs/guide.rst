@@ -5,14 +5,33 @@ User guide
 Installation
 ============
 
-.. todo:: Write it
+.. code-block:: console
+
+    pip install atsphinx-qrcode
 
 Usage
 =====
 
-.. todo:: Write it
+Setup
+-----
+
+.. code-block:: python
+    :caption: conf.py
+
+    extensions = [
+        "atsphinx.qrcode",
+    ]
+
+Write into your document
+------------------------
+
+.. code-block:: rst
+
+    .. qrcode::
+
+        https://example.com
 
 Configuration
 =============
 
-.. todo:: Write it
+.. todo:: Write after if it requires

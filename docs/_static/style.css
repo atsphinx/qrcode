@@ -1,0 +1,6 @@
+div.flex {
+  display: flex;
+  div.size-1 {
+    flex: 1;
+  }
+}

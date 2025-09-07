@@ -15,6 +15,7 @@ extensions = [
     "sphinx.ext.todo",
     # Third-party extensions
     "atsphinx.mini18n",
+    "atsphinx.qrcode",
 ]
 templates_path = ["_templates", get_mini18n_template_dir()]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
@@ -29,6 +30,7 @@ html_theme = "furo"
 html_static_path = ["_static"]
 html_title = f"{project} v{release}"
 html_css_files = [
+    "style.css",
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css",
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css",
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css",
