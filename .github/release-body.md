@@ -1,3 +1,3 @@
-Release atsphinx-qrcode v0.0.0
+Release atsphinx-qrcode v0.1.0
 
-- Changelog is https://github.com/atsphinx/qrcode/blob/v0.0.0/CHANGES.rst
+- Changelog is https://github.com/atsphinx/qrcode/blob/v0.1.0/CHANGES.rst
