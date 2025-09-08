@@ -23,7 +23,7 @@ atsphinx-qrcode
 Overview
 ========
 
-Simple Sphinx extension to render SVG of QRCode.
+Simple Sphinx extension to render SVG of QR code.
 
 .. toctree::
    :maxdepth: 1

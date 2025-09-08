@@ -33,5 +33,5 @@ msgid "Overview"
 msgstr "概要"
 
 #: ../../index.rst:24
-msgid "Simple Sphinx extension to render SVG of QRCode."
+msgid "Simple Sphinx extension to render SVG of QR code."
 msgstr "QRコードのSVGを出力する、シンプルなSphinx拡張です。"

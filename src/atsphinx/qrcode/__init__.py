@@ -1,4 +1,4 @@
-"""Render QRCode image on Sphinx document."""
+"""Render QR code image on Sphinx document."""
 
 from __future__ import annotations
 

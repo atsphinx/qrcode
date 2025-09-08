@@ -2,7 +2,7 @@
 atsphinx-qrcode
 ===============
 
-Render QRCode image on Sphinx document.
+Render QR code image on Sphinx document.
 
 Getting started
 ===============

@@ -12,4 +12,4 @@ Initial commit.
 Features
 --------
 
-* Render single sized QRCode.
+* Render single sized QR code.
