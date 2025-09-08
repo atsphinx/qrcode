@@ -1,5 +1,6 @@
 from atsphinx.mini18n import get_template_dir as get_mini18n_template_dir
 from atsphinx.qrcode import __version__ as version
+from sphinx.directives import SphinxDirective
 
 # -- Project information
 project = "atsphinx-qrcode"
@@ -70,10 +71,29 @@ mini18n_support_languages = ["en", "ja"]
 mini18n_basepath = "/qrcode/"
 
 
+class SideBySide(SphinxDirective):  # noqa: D101
+    has_content = True
+
+    def run(self):  # noqa: D102
+        from docutils import nodes
+
+        content = "\n".join(self.content)
+
+        source = nodes.literal_block(text=content)
+        source["language"] = "rst"
+        left = nodes.container(classes=["size-1"])
+        left += source
+
+        dest = self.parse_content_to_nodes(content)
+        right = nodes.container(classes=["size-1"])
+        right += dest
+
+        flex = nodes.container(classes=["flex"])
+        flex += left
+        flex += right
+
+        return [flex]
+
+
 def setup(app):
-    app.add_object_type(
-        "confval",
-        "confval",
-        objname="configuration value",
-        indextemplate="pair: %s; configuration value",
-    )
+    app.add_directive("side-by-side", SideBySide)

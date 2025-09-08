@@ -55,3 +55,34 @@ Directive
 
         This is level of "error correction" to restore if code is broken.
         It must be one of "L", "M", "Q", "H" (ascending ordered of restore level).
+
+Examples
+========
+
+.. side-by-side::
+
+    .. qrcode::
+
+        https://example.com
+
+.. side-by-side::
+
+    .. qrcode::
+        :qr_version: 10
+
+        https://example.com
+
+.. side-by-side::
+
+    .. qrcode::
+        :qr_error_correction: H
+
+        https://example.com
+
+.. side-by-side::
+
+    .. qrcode::
+        :qr_version: 10
+        :qr_error_correction: H
+
+        https://example.com
