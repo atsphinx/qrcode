@@ -2,8 +2,8 @@
 Change logs
 ===========
 
-v0.1.0
-======
+Version 0.1.0
+=============
 
 :date: 2025-09-08 (Asia/Tokyo)
 
