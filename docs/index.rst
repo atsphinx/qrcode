@@ -9,12 +9,14 @@ atsphinx-qrcode
         .. code-block:: rst
 
             .. qrcode::
+                :align: center
 
                 https://example.com
 
     .. container:: size-1
 
         .. qrcode::
+            :align: center
 
             https://example.com
 
